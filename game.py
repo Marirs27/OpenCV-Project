@@ -104,23 +104,14 @@ def draw_stickman(C,coordinates,background,swords="disable_swords") :
     C.create_polygon([LS[0],LS[1]-15,((LS[0]+RS[0])//2 +1),LS[1]-3,RS[0]+2,RS[1]-15,RH[0]+13,RH[1]-10,(LH[0]+RH[0])//2,RH[1]+10,LH[0]-13,LH[1]-10],fill="gray")
     C.create_polygon([LS[0]+3,LS[1]-12,((LS[0]+RS[0])//2 +1),LS[1],RS[0]-1,RS[1]-12,RH[0]+10,RH[1]-13,(LH[0]+RH[0])//2,RH[1]+7,LH[0]-10,LH[1]-13],fill="white")
 
-def Make_Canvas(C,coordinates) :
-    draw_stickman(C,coordinates,background,"enable_swords")
+    # Boxes
+    
+
+
+
+def Make_Canvas(C,coordinates,root) :
+    draw_stickman(C,coordinates,"black","enable_swords")
     root.update()
-    time.sleep(0.4)
+    time.sleep(0.2)
     C.delete('all')
-
-root = Tk()    
-background = "black"
-C = Canvas(root, bg = background,height = 600, width = 600)
-C.pack()
-Raise_swords_coordinates = {"Nose" : [300,275] , "Left-Shoulder" : [272,310] , "Right-Shoulder" : [326,310] , "Left-Elbow" : [228,310] , "Right-Elbow" : [370,310] , "Left-Wrist" : [228,260] , "Right-Wrist" : [370,260], "Left-Hip" : [285,383], "Right-Hip" : [315,383], "Left-Knee" : [283,426], "Right-Knee" : [316,426], "Left-Ankle" : [283,475], "Right-Ankle" : [316,475] , "Left-Sword" : [0,0] , "Right-Sword" : [0,0]}
-Shealth_swords_coordinates = {"Nose" : [300,275] , "Left-Shoulder" : [272,310] , "Right-Shoulder" : [326,310] , "Left-Elbow" : [242,342] , "Right-Elbow" : [357,342] , "Left-Wrist" : [242,392] , "Right-Wrist" : [357,392], "Left-Hip" : [285,383], "Right-Hip" : [315,383], "Left-Knee" : [283,426], "Right-Knee" : [316,426], "Left-Ankle" : [283,475], "Right-Ankle" : [316,475] , "Left-Sword" : [-127,90] , "Right-Sword" : [127,90]}
-
-i = 0
-while True:
-    coordinates = [Raise_swords_coordinates,Shealth_swords_coordinates]
-    Make_Canvas(C,coordinates[i%2])
-    print(i%2)
-    i += 1
     
