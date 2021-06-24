@@ -109,7 +109,7 @@ def draw_stickman(C,coordinates,background,swords="disable_swords") :
 
 
 def Make_Canvas(C,coordinates,root) :
-    draw_stickman(C,coordinates,"black","enable_swords")
+    draw_stickman(C,coordinates,"black","disable_swords")
     root.update()
     time.sleep(0.01)
     C.delete('all')
