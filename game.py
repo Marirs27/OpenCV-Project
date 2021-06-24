@@ -104,7 +104,7 @@ def draw_stickman(C,coordinates,background,swords="disable_swords") :
     C.create_polygon([LS[0],LS[1]-15,((LS[0]+RS[0])//2 +1),LS[1]-3,RS[0]+2,RS[1]-15,RH[0]+13,RH[1]-10,(LH[0]+RH[0])//2,RH[1]+10,LH[0]-13,LH[1]-10],fill="gray")
     C.create_polygon([LS[0]+3,LS[1]-12,((LS[0]+RS[0])//2 +1),LS[1],RS[0]-1,RS[1]-12,RH[0]+10,RH[1]-13,(LH[0]+RH[0])//2,RH[1]+7,LH[0]-10,LH[1]-13],fill="white")
 
-    # Boxes
+    # Boxes to slay
 
 
 
