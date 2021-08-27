@@ -6,6 +6,7 @@ A fun animation built using Tkinter that immitates your action. The posture is t
 python coords.py
 ```
 ## Output
+https://user-images.githubusercontent.com/68152189/131182920-36d86efe-414e-499d-8f45-3e9366626d7e.mp4
 
-https://user-images.githubusercontent.com/68152189/129486451-139542fc-fecc-4920-8f94-45640ad7967d.mp4
+
 
